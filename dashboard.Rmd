@@ -26,7 +26,7 @@ data_insta = instacart |>
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Box plot
 
 ```{r}
 data_insta |>
@@ -40,7 +40,7 @@ data_insta |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Scatter plot
 
 ```{r}
 data_insta |> 
@@ -52,7 +52,7 @@ data_insta |>
   )
 ```
 
-### Chart C
+### Bar chart
 
 ```{r}
 data_insta |> 
