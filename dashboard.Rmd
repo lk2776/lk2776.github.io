@@ -1,5 +1,5 @@
 ---
-title: "Dashboard!!"
+title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -9,49 +9,40 @@ output:
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
-library(dplyr)
-library(rnoaa)
 library(p8105.datasets)
 library(plotly)
-
 ```
 
 ```{r}
-# Get a list of all NY station IDs
 data("instacart") 
-
 data_insta = instacart |>
   drop_na() |>
   filter(
     department == "snacks"
   )
-  #select(order_id,reordered,order_number,order_dow,order_hour_of_day,aisle,department)
-  
 ```
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
-### Box plot
+### Chart A
+
 ```{r}
 data_insta |>
+  mutate(aisle = fct_reorder(aisle, order_number)) |> 
   plot_ly(
     x = ~aisle, y = ~order_number, color = ~aisle, 
     type = "box", colors = "viridis"
   )
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
-### Scatterplot
+### Chart B
+
 ```{r}
 data_insta |> 
-  #mutate(
-    #text_label = 
-      #str_c("Price: ", price, "\nNeighborhood: ", neighbourhood)) |> 
-  #text = ~text_label,
-  #
   group_by(order_hour_of_day) |>
   mutate(mean_order_number = mean(order_number)) |>
   plot_ly(
@@ -60,8 +51,8 @@ data_insta |>
   )
 ```
 
+### Chart C
 
-### Bar chart
 ```{r}
 data_insta |> 
   count(aisle) |> 
