@@ -1,9 +1,11 @@
-## show address
-(https://en.wikipedia.org/wiki/Anna_Bartels)
+\
+\
+\
+\
+My name is Lahari, and I’m currently enrolled in the P8105 Data Science course.\
+This website was created as part of a course assignment.\
+In this course, we learn to create attractive plots, as shown below.
+\
 
-## click link 
-[wiki](https://en.wikipedia.org/wiki/Anna_Bartels)
+<img src="images/unnamed-chunk-9-1.png" style="width:50%">   
 
-
-## about
-[info](about.html)
