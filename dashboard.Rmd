@@ -19,7 +19,7 @@ data("instacart")
 data_insta = instacart |>
   drop_na() |>
   filter(
-    department == "snacks"
+    department == "personal care"
   )
 ```
 
