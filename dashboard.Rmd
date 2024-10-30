@@ -22,24 +22,21 @@ data("instacart")
 
 data_insta = instacart |>
   drop_na() |>
-  select(order_id,reordered,order_number,order_dow,order_hour_of_day,aisle,department, )
+  filter(
+    department == "snacks"
+  )
+  #select(order_id,reordered,order_number,order_dow,order_hour_of_day,aisle,department)
   
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Box plot
 ```{r}
 data_insta |>
   plot_ly(
-    x = ~department, y = ~order_number, color = ~department, 
-    type = "box", colors = "viridis"
-  )
-
-data_insta |>
-  plot_ly(
-    x = ~department, y = ~order_dow, color = ~department, 
+    x = ~aisle, y = ~order_number, color = ~aisle, 
     type = "box", colors = "viridis"
   )
 ```
@@ -47,18 +44,30 @@ data_insta |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
-```{r}
-
-```
-
-### Chart C
+### Scatterplot
 ```{r}
 data_insta |> 
-  count(department) |> 
-  mutate(department = fct_reorder(department, n)) |> 
+  #mutate(
+    #text_label = 
+      #str_c("Price: ", price, "\nNeighborhood: ", neighbourhood)) |> 
+  #text = ~text_label,
+  #
+  group_by(order_hour_of_day) |>
+  mutate(mean_order_number = mean(order_number)) |>
   plot_ly(
-    x = ~department, y = ~n, 
+    x = ~order_hour_of_day, y = ~mean_order_number, color = ~order_hour_of_day, 
+    type = "scatter", mode = "markers", alpha = 0.5
+  )
+```
+
+
+### Bar chart
+```{r}
+data_insta |> 
+  count(aisle) |> 
+  mutate(aisle = fct_reorder(aisle, n)) |> 
+  plot_ly(
+    x = ~aisle, y = ~n, 
     type = "bar")
 ```
 
