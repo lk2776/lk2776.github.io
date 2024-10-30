@@ -11,7 +11,7 @@ library(flexdashboard)
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
-#rmarkdown::render("dashboard_template.Rmd", output_format = "flexdashboard::flex_dashboard")
+#rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
 ```
 
 ```{r}
@@ -23,7 +23,7 @@ data_insta = instacart |>
   )
 ```
 
-Column {data-width=550}
+Column {data-width=650}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -37,7 +37,7 @@ data_insta |>
   )
 ```
 
-Column {data-width=450}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B
