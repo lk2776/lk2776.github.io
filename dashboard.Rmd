@@ -1,5 +1,56 @@
 ---
-title: "dashboard"
-output: html_document
-date: "2024-10-30"
+title: "Dashboard!!"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(dplyr)
+library(rnoaa)
+library(p8105.datasets)
+library(plotly)
+
+```
+
+```{r}
+# Get a list of all NY station IDs
+stations <- ghcnd_stations()
+nystationids <-  stations %>% 
+  filter(state == "NY") %>% 
+  distinct(id)
+
+# Pull the desired weather data for all of these stations
+nydat <- meteo_pull_monitors(nystationids$id, 
+                             date_min = "2010-01-01", 
+                             date_max = "2010-12-31", 
+                             var = c("PRCP", "SNOW", "SNWD", "TMAX", "TMIN"))
+
+# Save the resulting data
+save(nystationids, nydat, file = "nynoaadat.RData")
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+```{r}
+
+```
+
+### Chart C
+```{r}
+
+```
+
