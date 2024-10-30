@@ -18,19 +18,12 @@ library(plotly)
 
 ```{r}
 # Get a list of all NY station IDs
-stations <- ghcnd_stations()
-nystationids <-  stations %>% 
-  filter(state == "NY") %>% 
-  distinct(id)
+data("instacart") 
 
-# Pull the desired weather data for all of these stations
-nydat <- meteo_pull_monitors(nystationids$id, 
-                             date_min = "2010-01-01", 
-                             date_max = "2010-12-31", 
-                             var = c("PRCP", "SNOW", "SNWD", "TMAX", "TMIN"))
-
-# Save the resulting data
-save(nystationids, nydat, file = "nynoaadat.RData")
+data_insta = instacart |>
+  drop_na() |>
+  select(order_id,reordered,order_number,order_dow,order_hour_of_day,aisle,department, )
+  
 ```
 
 Column {data-width=650}
@@ -38,7 +31,17 @@ Column {data-width=650}
 
 ### Chart A
 ```{r}
+data_insta |>
+  plot_ly(
+    x = ~department, y = ~order_number, color = ~department, 
+    type = "box", colors = "viridis"
+  )
 
+data_insta |>
+  plot_ly(
+    x = ~department, y = ~order_dow, color = ~department, 
+    type = "box", colors = "viridis"
+  )
 ```
 
 Column {data-width=350}
@@ -51,6 +54,11 @@ Column {data-width=350}
 
 ### Chart C
 ```{r}
-
+data_insta |> 
+  count(department) |> 
+  mutate(department = fct_reorder(department, n)) |> 
+  plot_ly(
+    x = ~department, y = ~n, 
+    type = "bar")
 ```
 
