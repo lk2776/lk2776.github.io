@@ -1,15 +1,9 @@
----
-title: "lk2776 website"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
----
-
 ## show address
 (https://en.wikipedia.org/wiki/Anna_Bartels)
 
 ## click link 
 [wiki](https://en.wikipedia.org/wiki/Anna_Bartels)
 
+
+## about
+[info](about.html)
