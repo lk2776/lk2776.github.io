@@ -1,0 +1,16 @@
+---
+title: "lk2776"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# wiki page
+(https://en.wikipedia.org/wiki/Israel–Hamas_war)
+[wiki](https://en.wikipedia.org/wiki/Israel–Hamas_war)
+
+# google 
+[this](https://www.google.com)
+
