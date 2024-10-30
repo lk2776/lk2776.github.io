@@ -4,8 +4,8 @@
 \
 My name is Lahari, and I’m currently enrolled in the P8105 Data Science course.\
 This website was created as part of a course assignment.\
-In this course, we learn to create attractive plots, as shown below.
+In this course, we learn to create nice plots, as shown below.
 \
-
+\
 <img src="images/unnamed-chunk-9-1.png" style="width:50%">   
 
