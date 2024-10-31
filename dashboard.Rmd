@@ -72,9 +72,9 @@ data_insta |>
     x = ~aisle, y = ~n, 
     type = "bar") |>
   layout(
-    title = "personal care items",
-    xaxis = list(title = "personal care aisle"),
-    yaxis = list(title = "count")
+    title = "Count of Personal Care Products",
+    xaxis = list(title = "Personal Care Products"),
+    yaxis = list(title = "Count")
   )
 ```
 
