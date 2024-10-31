@@ -10,6 +10,10 @@
 
 * Cell culture, Protein extraction, DNA and RNA extraction,\ Western blotting, RT-PCR, Immunohistochemistry
 
+**Languages**:\
+
+* English
+
 ### Work
 **Columbia University Medical Center**\
 **Data Analyst**\
