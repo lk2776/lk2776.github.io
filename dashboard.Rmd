@@ -34,6 +34,11 @@ data_insta |>
   plot_ly(
     x = ~aisle, y = ~order_number, color = ~aisle, 
     type = "box", colors = "viridis"
+  ) |>
+  layout(
+    title = "Distribution of Orders by Personal Care Products",
+    xaxis = list(title = "Personal Care Aisle"),
+    yaxis = list(title = "Order number")
   )
 ```
 
@@ -49,6 +54,11 @@ data_insta |>
   plot_ly(
     x = ~order_hour_of_day, y = ~mean_order_number, color = ~order_hour_of_day, 
     type = "scatter", mode = "markers", alpha = 0.5
+  )|>
+  layout(
+    title = "Mean Order Number by Hour of Day",
+    xaxis = list(title = "Hour of Day"),
+    yaxis = list(title = "Mean Order number")
   )
 ```
 
@@ -60,6 +70,11 @@ data_insta |>
   mutate(aisle = fct_reorder(aisle, n)) |> 
   plot_ly(
     x = ~aisle, y = ~n, 
-    type = "bar")
+    type = "bar") |>
+  layout(
+    title = "personal care items",
+    xaxis = list(title = "personal care aisle"),
+    yaxis = list(title = "count")
+  )
 ```
 

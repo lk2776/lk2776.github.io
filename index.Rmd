@@ -3,8 +3,9 @@
 \
 \
 My name is Lahari, and I’m currently enrolled in the [P8105](https://p8105.com) Data Science I course.\
-This website was created as part of a course assignment.\
+This website was created as part of a course assignment and is hosted on [Github](https://github.com/lk2776/lk2776.github.io/tree/main)\
 \
 \
 <img src="images/ele.png" style="width:50%">   
 [Mama and Baby Elephant](https://www.flickr.com/photos/tamaralund/3490809971/in/photostream/)
+
