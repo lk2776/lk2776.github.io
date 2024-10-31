@@ -4,7 +4,6 @@
 \
 My name is Lahari, and I’m currently enrolled in the [P8105](https://p8105.com) Data Science I course.\
 This website was created as part of a course assignment.\
-
 \
 \
 <img src="images/ele.png" style="width:50%">   
