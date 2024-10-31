@@ -20,12 +20,6 @@ _New York, NY_\
 
 - Developed a pipeline to help identify the genomic mutations in a targeted cancer gene panel. 
 
-**Johns Hopkins University**\
-**Research Technologist**\
-_Baltimore, MD_\
-
-- Characterized the effects of T0901317's effects in a Wilson's disease mouse model.
-
 ### Skills
 
 **Programming Skills**:\

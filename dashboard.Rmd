@@ -30,17 +30,18 @@ Column {data-width=650}
 
 ```{r}
 data_insta |>
-  mutate(aisle = fct_reorder(aisle, order_number)) |> 
+  mutate(aisle = fct_reorder(aisle, order_hour_of_day)) |> 
   plot_ly(
-    x = ~aisle, y = ~order_number, color = ~aisle, 
+    x = ~aisle, y = ~order_hour_of_day, color = ~aisle, 
     type = "box", colors = "viridis"
   ) |>
   layout(
-    title = "Distribution of Orders by Personal Care Products",
+    title = "Personal Care Product Purchases: Distribution by Hour of Day",
     xaxis = list(title = "Personal Care Aisle"),
-    yaxis = list(title = "Order number")
+    yaxis = list(title = "Hour of Day")
   )
 ```
+
 
 Column {data-width=350}
 -----------------------------------------------------------------------
