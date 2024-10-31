@@ -18,13 +18,13 @@ concepts for Bioinformatics
 **Data Analyst**\
 _New York, NY_\
 
-- Development of pipeline to help identify the genomic mutations in a targeted cancer gene panel. 
+- Developed a pipeline to help identify the genomic mutations in a targeted cancer gene panel. 
 
 **Johns Hopkins University**\
 **Research Technologist**\
 _Baltimore, MD_\
 
-- Facilitated the characterization of T0901317's effects in a Wilson's disease mouse model.
+- Characterized the effects of T0901317's effects in a Wilson's disease mouse model.
 
 ### Skills
 
