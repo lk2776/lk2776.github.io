@@ -1,5 +1,31 @@
 ## Experience {.tabset}
 
+### Academic
+
+**Columbia University**    
+_New York, NY_  
+
+- _Coursework_: Biostatistical Methods     
+
+**Johns Hopkins University**   
+_Baltimore, MD_   
+
+- _Coursework_: Advanced genomics and genetics analysis, Advanced practical   
+concepts for Bioinformatics
+
+### Professional
+**Columbia University Medical Center**\
+**Data Analyst**\
+_New York, NY_\
+
+- Development of pipeline to help identify the genomic mutations in a targeted cancer gene panel. 
+
+**Johns Hopkins University**\
+**Research Technologist**\
+_Baltimore, MD_\
+
+- Facilitated the characterization of T0901317's effects in a Wilson's disease mouse model.
+
 ### Skills
 
 **Programming Skills**:\
@@ -13,25 +39,3 @@
 **Languages**:\
 
 * English
-
-### Work
-**Columbia University Medical Center**\
-**Data Analyst**\
-_New York, NY_\
-
-- Development of pipeline to help identify the genomic mutations in a targeted cancer gene panel. 
-
-### Coursework
-
-**Columbia University**    
-_New York, NY_  
-
-- _Coursework_: Biostatistical Methods     
-
-**Johns Hopkins University**   
-_Baltimore, MD_   
-
-- _Coursework_: Advanced genomics and genetics analysis, Advanced practical   
-concepts for Bioinformatics
-
-
